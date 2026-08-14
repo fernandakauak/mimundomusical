@@ -19,10 +19,16 @@
         <button class="volver" @click="router.back()">Volver a Catálogo</button>
         <div class="disco">
             <img v-bind:src="cd.img" alt="cd.nombre">
-            <h1 class="emoji">{{ cd.artista }} - {{ cd.nombre }}</h1>
-            <h2>{{ cd.anio }}</h2>
-            <h3>{{ cd.genero }}</h3>
-            <p>Canción Destacada: <span>{{ cd.destacada }}</span></p>
+            <div class="titulo">
+                <h1>{{ cd.artista }}</h1>
+                <h2>{{ cd.nombre }}</h2>
+            </div>
+            <h2>Año de lanzamiento: {{ cd.anio }}</h2>
+            <h3>Género: {{ cd.genero }}</h3>
+            <div class="resena">
+                <p>{{ cd.resena }}</p>
+                <span>Canción Destacada: "{{ cd.destacada }}"</span>
+            </div>
         </div>
     </div>
 </template>
@@ -51,13 +57,28 @@
         border: 1px solid white;
         border-radius: 12px;
         padding: 2%;
+        color: purple;
     }
 
     .disco h1, .disco h2, .disco h3 {
         margin: 0;
     }
 
-    .disco p {
+    .titulo {
+        background-color: purple;
+        width: 65%;
+        border-radius: 50px;
+        color: violet;
+        padding: 2%;
+        margin: 0 auto 2%;
+    }
+
+    .titulo h1 {
+        font-size: 36px;
+        margin-bottom: 2%;
+    }
+
+    .disco .resena {
         background-color: white;
         border: 2px solid purple;
         color: purple;
@@ -67,7 +88,11 @@
         font-size: 20px;
     }
 
-    .disco p span {
+    .disco .resena p {
+        margin: 0 0 4%;
+    }
+
+    .disco span {
         font-weight: bold;
         font-size: 18px;
     }
