@@ -38,7 +38,8 @@
     <div class="lista">
         <div class="prod" v-for="disco in discosFiltrados" :key="disco.id">
             <img v-bind:src="disco.img" alt="disco.nombre">
-            <h3>{{ disco.artista }} - {{ disco.nombre }}</h3>
+            <h2>{{ disco.artista }}</h2>
+            <h3>{{ disco.nombre }}</h3>
             <button @click="verDetalle(disco.id)">Ver</button>
         </div>
     </div>
@@ -81,8 +82,14 @@
         width: 100%;
     }
 
+    .prod h2 {
+        width: 100%;
+        margin: 2% auto 0;
+    }
+
     .prod h3 {
         width: 100%;
+        margin: 1% auto 0;
     }
 
     .prod button {
