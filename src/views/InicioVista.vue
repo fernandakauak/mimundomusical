@@ -22,6 +22,7 @@
         padding: 2%;
         border-radius: 10px;
         border: 1px solid white;
+        color: purple;
     }
 
     section p {

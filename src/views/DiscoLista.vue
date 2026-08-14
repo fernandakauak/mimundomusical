@@ -58,6 +58,7 @@
         width: 20%;
         margin: 1%;
         background-color: violet;
+        color: purple;
     }
 
     .generos-cat {
