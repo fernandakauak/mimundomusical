@@ -21,6 +21,7 @@
         margin: 2% auto;
         padding: 2%;
         border-radius: 10px;
+        border: 1px solid white;
     }
 
     section p {

@@ -22,6 +22,8 @@
         width: 80%;
         margin: 1% auto;
         border-radius: 10px;
+        color: purple;
+        border: 1px solid white;
     }
 
     section h1, section h2 {
