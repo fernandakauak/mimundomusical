@@ -1,11 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import InicioVista from '../views/InicioVista.vue';
 import NosotrosVista from '../views/NosotrosVista.vue';
 import DiscoLista from '../views/DiscoLista.vue';
 import DiscoDetalle from '../views/DiscoDetalle.vue';
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHashHistory(import.meta.env.BASE_URL),
     
     routes: [
         {
