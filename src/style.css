@@ -1,0 +1,41 @@
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  background-image: url(/src/assets/fondo.jpg);
+  background-size: 100%;
+  background-blend-mode: color-dodge;
+  background-color: darkviolet;
+}
+
+#app {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+nav {
+  margin: 2% auto 4%;
+}
+
+nav a {
+  padding: 2%;
+  background-color: purple;
+  color: violet;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover, nav a.active {
+  padding: 2%;
+  color: purple;
+  background-color: violet;
+  text-decoration: none;
+  font-weight: bold;
+}
