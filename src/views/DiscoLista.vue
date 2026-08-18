@@ -49,7 +49,8 @@
     .lista {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        width: 85%;
+        margin: auto;
     }
 
     .prod {
