@@ -5,7 +5,8 @@
 <template>
   <div class="demo">
     <header>
-        <div class="logo">
+        <div class="logo"> 
+          <img src="./assets/logo_dc.png" alt="Discos Cachilupi">
         </div>
         <nav>
             <router-link :to="`/inicio`" active-class="active">Inicio</router-link>
@@ -16,3 +17,9 @@
     <router-view/>
   </div>
 </template>
+
+<style scoped>
+  .logo {
+    margin: 1% auto 2%;
+  }
+</style>
